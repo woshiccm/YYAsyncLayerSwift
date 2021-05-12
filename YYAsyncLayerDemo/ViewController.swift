@@ -65,7 +65,7 @@ extension ViewController: UITableViewDelegate {
 
 class AsyncDisplayCell: UITableViewCell {
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(AsyncDisplayView(frame: CGRect(x: 15, y: 3, width: 60, height: 60)))
     }
