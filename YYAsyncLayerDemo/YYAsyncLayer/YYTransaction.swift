@@ -105,7 +105,7 @@ class YYTransaction: NSObject {
     override var hash: Int {
         
         let v1 = selector?.hashValue ?? 0
-        let v2 = (target as AnyObject).hashValue ?? 0
+        let v2 = (target as AnyObject).hash ?? 0
         return v1 ^ v2
     }
     
