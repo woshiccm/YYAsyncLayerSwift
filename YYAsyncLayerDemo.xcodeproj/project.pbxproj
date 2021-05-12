@@ -38,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DFBDACF264BFAFB003EDC1E /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		3DFBDAD0264BFAFB003EDC1E /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		9C2601452073366B005DA748 /* YYAsyncLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYAsyncLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2601482073366B005DA748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C26014D2073366B005DA748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DFBDACE264BFAFB003EDC1E /* Xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				3DFBDACF264BFAFB003EDC1E /* DEVELOPMENT_TEAM.xcconfig */,
+				3DFBDAD0264BFAFB003EDC1E /* Shared.xcconfig */,
+			);
+			path = "Xcode-config";
+			sourceTree = "<group>";
+		};
 		9C26013C2073366A005DA748 = {
 			isa = PBXGroup;
 			children = (
+				3DFBDACE264BFAFB003EDC1E /* Xcode-config */,
 				9C2601472073366B005DA748 /* YYAsyncLayerDemo */,
 				9C26015C2073366B005DA748 /* YYAsyncLayerDemoTests */,
 				9C2601672073366B005DA748 /* YYAsyncLayerDemoUITests */,
@@ -341,6 +353,7 @@
 /* Begin XCBuildConfiguration section */
 		9C26016B2073366B005DA748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFBDAD0264BFAFB003EDC1E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -398,6 +411,7 @@
 		};
 		9C26016C2073366B005DA748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFBDAD0264BFAFB003EDC1E /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
